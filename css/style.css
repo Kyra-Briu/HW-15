@@ -16,26 +16,35 @@
 }
 .item{
     font-size:20px;
-    
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .item:first-child{
     background-color:coral;
+    order:-1;
+    flex-basis:calc((100% - 0px) / 2);
 }
 .item:nth-child(2){
     background-color:darkgoldenrod;
+    order:2;
+    flex-basis:calc((100% - 0px) / 3);
+
 }
 .item:nth-child(3){
     background-color:blueviolet;
+    order:3;
+    flex-basis:calc((100% - 0px) / 3);
+
 }
 .item:nth-child(4){
     background-color:darkcyan;
+    order:4;
+    flex-basis:calc((100% - 0px) / 3);
+
 }
 .item:nth-child(5){
     background-color:darkgreen;
-}
-.item:nth-child(-n+2){
+    order:1;
     flex-basis:calc((100% - 0px) / 2);
-}
-.item:nth-child(n+3){
-    flex-basis:calc((100% - 0px) / 3);
 }
